@@ -23,9 +23,14 @@ a {
 }
 
 .global-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 44px;
   padding: 0 1em;
 }
+/* position을 줄 떄는 width를 따로 잡아줘야 적용됨 / position 잡아준 이유는 scrollHeight에서 nav를 제외하기 위함 */
 
 .global-nav-link {
   height: 100%;
@@ -37,6 +42,10 @@ a {
 }
 
 .local-nav {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
   height: 52px;
   border-bottom: 1px solid #ddd;
   padding: 0 1em;
@@ -63,10 +72,11 @@ a {
 }
 
 .scroll-section {
-  padding-top: 50vh;
+  border: 3px solid red;
 }
 
 #scroll-section-0 h1 {
+  padding-top: 50vh;
   text-align: center;
   font-size: 4rem;
 }
